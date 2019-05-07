@@ -1,2 +1,0 @@
-﻿# facebooapi
-# python
