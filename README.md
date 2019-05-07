@@ -1,2 +1,2 @@
 # python
-python_practices from vincent wang
+python_practices from Vincent wang.
