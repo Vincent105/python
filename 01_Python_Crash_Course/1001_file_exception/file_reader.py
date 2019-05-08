@@ -14,7 +14,7 @@ filename = '01_Python_Crash_Course\\1001_file_exception\\pi_digits.txt'
 
 with open(filename) as file_object:
     for line in file_object:
-        print(line.rstrip())
+        print(line.rstrip()) 
 
 #逐行讀取文檔並且存放於列表
 filename = '01_Python_Crash_Course\\1001_file_exception\\pi_digits.txt'
