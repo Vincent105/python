@@ -7,13 +7,13 @@ class AnonymousSurvey():
 
     def show_question(self):
         """顯示問卷的問題"""
-        print(question)
+        print(self.question)
 
     def store_respones(self, new_respones):
         self.respones.append(new_respones)
 
     def show_result(self):
         print("Survey result:")
-        for respone in respones:
+        for respone in self.respones:
             print('-' + respone)
 
