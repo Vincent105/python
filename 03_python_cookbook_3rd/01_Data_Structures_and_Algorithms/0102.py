@@ -1,5 +1,8 @@
 #Case 1 
-def drop_first_last(grades):
-    first, *middle, last = grades
-    return avg(middle)
+record = ('Dave', 'dave@example.com', '773-555-1212', '847-555-1212')
+name, mail, *phone_numbers = record
+print(name)
+print(phone_numbers)                #解壓出的*變量永遠都是列表類型，不管解壓的電話號碼數量是多少（包括 0 個）。
+
+
 
