@@ -9,6 +9,8 @@ print(heap[0])
 print(heapq.heappop(heap))
 print(heapq.heappop(heap))
 print(heapq.heappop(heap))
+print(heapq.heappop(heap))
+print(heap)
 
 
 print(heapq.nlargest(3,nums))
