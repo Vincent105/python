@@ -11,3 +11,7 @@ print('\n')
 
 for j in range(10,-10,-2):
     print(j)
+
+number = int(input("請輸入星星數量："))
+for time in range(number):
+    print("*",end="")
