@@ -10,4 +10,8 @@ from collections import deque           #構造函數
 import re                               #正規表達式
 # 額外模組
 import pyperclip	                    #複製字符串
-import BeautifulSoup                    #
+
+
+
+# 爬蟲
+import BeautifulSoup                    #pip install beautifulsoup4
