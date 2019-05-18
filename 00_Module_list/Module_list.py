@@ -15,3 +15,4 @@ import pyperclip	                    #複製字符串
 
 # 爬蟲
 import BeautifulSoup                    #pip install beautifulsoup4
+import requests
