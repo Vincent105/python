@@ -11,8 +11,8 @@ import re                               #正規表達式
 # 額外模組
 import pyperclip	                    #複製字符串
 
+#python -m pip install (your_module_name)
 
-
-# 爬蟲
-import BeautifulSoup                    #pip install beautifulsoup4
+# 爬蟲                      
+import BeautifulSoup                     
 import requests
