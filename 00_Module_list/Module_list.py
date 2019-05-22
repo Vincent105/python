@@ -11,8 +11,14 @@ import re                               #正規表達式
 # 額外模組
 import pyperclip	                    #複製字符串
 
-#python -m pip install (your_module_name)
+# python -m pip install beautifulSoup4
 
-# 爬蟲                      
-import BeautifulSoup                     
+# 爬蟲(請求庫)
 import requests
+import selenium
+import beautifulSoup4                     
+
+# 模擬器chrome     https://chromedriver.storage.googleapis.com/index.html
+# 模擬器filefox    https://github.com/mozilla/geckodriver/releases
+# PhantomJS        http://phantomjs.org/download.html   
+ 
