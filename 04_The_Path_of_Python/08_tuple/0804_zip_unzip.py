@@ -10,3 +10,7 @@ print(player)
 f, i = zip(*player)
 print(f)
 print(i)
+
+
+x = (n for n in range(3))
+print(type(x))
