@@ -49,4 +49,5 @@ import tornado                          # python -m pip install tornado
                                         # 透過cmd 下指令cd C:\Python3X\Scripts pip install pycurl-7.43.0.2-cp37-cp37m-win32.whl                                     
                                         # python -m pip install pyspider      
 
+
    
