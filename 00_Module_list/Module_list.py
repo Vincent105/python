@@ -8,6 +8,7 @@ import json                             #将数据结构转储文件，并在程
 import unittest                         #代碼測試工具
 from collections import deque           #構造函數
 import re                               #正規表達式
+import locale                           #獲取系統編碼
 
 # 額外模組
 import pyperclip	                    #複製字符串
