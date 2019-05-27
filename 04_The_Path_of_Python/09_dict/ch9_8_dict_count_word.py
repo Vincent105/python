@@ -1,7 +1,6 @@
 song = "Are you sleeping? Are you sleeping? Brother John, Brother John? Morning bells are ringing. \
 Morning bells are ringing. Ding, dong, ding. Ding, dong, ding."
 
-mydict = {}
 print("原始文章:")
 print(song)
 
@@ -22,7 +21,16 @@ print(songlower)
 songlist = songlower.split()
 print(songlist)
 
+mydict = {wd:songlist.count(wd) for wd in songlist}
+print(mydict)        
+'''
+mydict = {}
+
 for wd in songlist:
     if wd in mydict:
         mydict[wd] += 1
+    else:        
+        mydict[wd] = 1
 
+print(mydict)        
+'''
