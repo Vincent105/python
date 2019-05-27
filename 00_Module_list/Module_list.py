@@ -29,8 +29,10 @@ import aiohttp                          # python -m pip install aiohttp         
  
 # 解析(第三方套件)
 import bs4                              # python -m pip install bs4        
-import lxml                             # python -m pip install lxml
+import lxml                             # python -m pip install lxml          更強大的html parser,速度較快
+import html5lib                         # python -m pip install html5lib      解決格式問題，但速度較慢
 import pyquery                          # python -m pip install pyquery
+
 
 # OCR                                   # python -m pip install tesseract
 import tesserocr                        # 透過cmd 下指令cd C:\Python3X\Scripts pip install tesserocr-2.4.0-cp37-cp37m-win32.whl                                        
