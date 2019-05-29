@@ -1,6 +1,6 @@
-import re 
+import re
 phoneNumberRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
-mo = phoneNumberRegex.search('Cell:415-555-9999, Work:415-555-1111')    
+mo = phoneNumberRegex.search('Cell:415-555-9999, Work:415-555-1111')
 print(mo.group())
 
 mof = phoneNumberRegex.findall('Cell:415-555-9999, Work:415-555-1111')
