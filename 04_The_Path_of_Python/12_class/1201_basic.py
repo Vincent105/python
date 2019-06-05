@@ -1,10 +1,10 @@
 class Bank():
     '''define bank'''
-    bankname = 'ctbank'
 
     def __init__(self, uname, money):
         self.name = uname
         self.balance = money
+        bankname = 'ctbank'
 
     def save_money(self, money):
         self.balance += money
@@ -22,7 +22,7 @@ class Bank():
 
 
 userbank = Bank('vincent', 100)
-print(userbank.bankname, userbank.motto(),'\n')
+print(userbank.bankname, userbank.motto(), '\n')
 userbank.get_balance()
 userbank.save_money(500)
 userbank.get_balance()
@@ -30,7 +30,7 @@ userbank.withdraw_money(100)
 userbank.get_balance()
 
 userbank_2 = Bank('esther', 10100)
-print(userbank_2.bankname, userbank_2.motto(),'\n')
+print(userbank_2.bankname, userbank_2.motto(), '\n')
 userbank_2.get_balance()
 userbank_2.save_money(500)
 userbank_2.get_balance()
