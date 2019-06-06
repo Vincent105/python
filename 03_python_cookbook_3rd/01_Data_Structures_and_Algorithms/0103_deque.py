@@ -1,5 +1,6 @@
-from collections import deque
+#保留最後 N 個元素
 
+from collections import deque
 def search(lines, pattern, history=5):
     previous_lines = deque(maxlen=history)
     for line in lines:

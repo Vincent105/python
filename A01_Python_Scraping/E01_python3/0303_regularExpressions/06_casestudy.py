@@ -17,11 +17,11 @@ def get_one_page(url):
 def main():
     url = 'https://maoyan.com/board/4'
     html = get_one_page(url)
-    print(html)
+    #print(html)
 
 
 def parse_one_page(html):
-    pattern = re.compile('<dd>.*?board-index.*?>(.*?)</i>', re.S)
+    pattern = re.compile('<dd>.*?board-index.*?>(.*?)</i>.*?data-src="(.*?)"', re.S)
     items = re.findall(pattern, html)
     print(items)
 

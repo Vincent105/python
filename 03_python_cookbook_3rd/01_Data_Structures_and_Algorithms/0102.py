@@ -1,3 +1,4 @@
+#解壓可迭代對象賦值給多個變量
 #Case 1 
 record = ('Dave', 'dave@example.com', '773-555-1212', '847-555-1212')
 name, mail, *phone_numbers = record

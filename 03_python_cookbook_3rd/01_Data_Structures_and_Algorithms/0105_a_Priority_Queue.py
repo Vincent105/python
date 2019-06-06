@@ -24,10 +24,14 @@ class Item:
 
 
 q = PiorityQueue()
-print(q.push(Item('foo'),1))
 q.push(Item('foo'),1)
 q.push(Item('bar'), 5)
 q.push(Item('spam'), 4)
 q.push(Item('grok'), 1)
 
-q.pop()
+#第一個 pop() 返回優先級最高的元素。 如果兩個有相同優先級的元素，pop 操作按照它們插入隊列的順序返回。
+print(q.pop())
+print(q.pop())
+print(q.pop())
+print(q.pop())
+
