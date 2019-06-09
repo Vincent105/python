@@ -6,6 +6,7 @@ with open(filename, encoding="utf-8") as fileobject:
     contents = fileobject.read()
 
 results = re.findall('<li.*?singer="(.*?)">(.*?)</a>', contents, re.S)
+print(results)
 for result in results:
     print(result[0],result[1])
 

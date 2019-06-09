@@ -32,3 +32,5 @@ hungbank._Bank__balance = 1000000        #透過使方法可串改私有屬性
 hungbank.get_balabce()
 usadollor = 50
 print(usadollor,hungbank.usa_to_taiwan(usadollor))
+
+hungbank._Bank__cal_rate(50)
