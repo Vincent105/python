@@ -54,4 +54,11 @@ import tornado                          # python -m pip install tornado
                                         # python -m pip install pyspider      
 
 
-   
+
+#Machine Learning
+import keras                            # pip install keras
+import tensorflow                       # pip install tensorflow-gpu==2.0.0-beta0
+import numpy                            # 透過cmd 下指令cd C:\Python3X\Scripts pip install numpy-1.16.4-cp36-cp36m-win_amd64.whl 
+                                        # pip install tensorboard
+                                        # pip install scipy
+                                        
