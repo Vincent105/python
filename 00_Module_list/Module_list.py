@@ -61,4 +61,7 @@ import tensorflow                       # pip install tensorflow-gpu==2.0.0-beta
 import numpy                            # 透過cmd 下指令cd C:\Python3X\Scripts pip install numpy-1.16.4-cp36-cp36m-win_amd64.whl 
                                         # pip install tensorboard
                                         # pip install scipy
+
+
+
                                         
