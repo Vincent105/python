@@ -61,7 +61,6 @@ import tensorflow                       # pip install tensorflow-gpu==2.0.0-beta
 import numpy                            # pip install numpy
 import tensorboard                      # pip install tensorboard
                                         # pip install scipy
-
-
+import Matplotlib                       # pip install Matplotlib
 
                                         
