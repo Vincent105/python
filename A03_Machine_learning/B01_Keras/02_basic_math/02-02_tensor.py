@@ -58,3 +58,8 @@ print(my_slice.shape)
 
 my_slice = train_imgs[10:100, 7:-7, 7:-7] #選出像素14 x 14
 print(my_slice.shape)
+
+
+# print('形狀', train_imgs[4])
+
+batch = train_imgs[:128]

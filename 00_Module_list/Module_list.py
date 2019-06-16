@@ -57,7 +57,7 @@ import tornado                          # python -m pip install tornado
 
 #Machine Learning
 import keras                            # pip install keras
-import tensorflow                       # pip install tensorflow-gpu==2.0.0-beta0
+import tensorflow                       # pip install tensorflow-gpu
 import numpy                            # pip install numpy
 import tensorboard                      # pip install tensorboard
                                         # pip install scipy
