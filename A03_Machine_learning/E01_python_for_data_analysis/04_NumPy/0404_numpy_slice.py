@@ -48,7 +48,10 @@ arr3d[0] = 42
 print(arr3d)
 arr3d[0] = old_values
 print(arr3d)
-
 print(arr3d[1][0])
 
-x = 
+#兩部索引
+x = arr3d[1]
+print(x)
+
+print(x[0])
