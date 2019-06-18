@@ -11,6 +11,7 @@ import locale                           #獲取系統編碼
 
 from collections import OrderedDict     #紀錄鍵-值添加順序
 from collections import defaultdict     #自動初始化每個 key 剛開始對應的值
+from collections import counter         #計數器
 from collections import deque           #構造函數
 
 # 額外模組
