@@ -14,6 +14,8 @@ from collections import defaultdict     #自動初始化每個 key 剛開始對�
 from collections import counter         #計數器
 from collections import deque           #構造函數
 
+import matplotlib.pyplot as plt         #繪圖用
+
 # 額外模組
 import pyperclip	                    #複製字符串
 
@@ -65,5 +67,4 @@ import numpy                            # pip install numpy
 import tensorboard                      # pip install tensorboard
                                         # pip install scipy
 import Matplotlib                       # pip install Matplotlib
-
-                                        
+import pandas                           # pip install pandas
