@@ -83,3 +83,4 @@ values = np.array([6, 0, 0, 3, 2, 5, 6])
 in1d = np.in1d(values, [2, 3, 4])
 print(in1d)
 
+
