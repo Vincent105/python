@@ -63,7 +63,7 @@ import tornado                          # python -m pip install tornado
 #Machine Learning
 import keras                            # pip install keras
 import tensorflow                       # pip install tensorflow-gpu
-import numpy                            # pip install numpy
+import numpy                            # pip install numpy==1.16.2
 import tensorboard                      # pip install tensorboard
                                         # pip install scipy
 import Matplotlib                       # pip install Matplotlib

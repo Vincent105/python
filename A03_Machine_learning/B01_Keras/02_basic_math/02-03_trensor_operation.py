@@ -13,3 +13,12 @@ def native_relu(x):
         for j in range(x.shape[1]):
             x[i, j] = max(x[i, j], 0)
     return x            
+
+from keras import layers
+from keras import models
+
+layers = layers.Dense(32, input_shape=(784,))
+
+model = model.Sequential()
+model.add(layers.Dense(32, input_shape=(784,)))
+model.add(layers.Dense(32))

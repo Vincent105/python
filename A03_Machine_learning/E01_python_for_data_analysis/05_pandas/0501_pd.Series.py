@@ -10,8 +10,13 @@ print(obj)
 print(obj.index)
 print(obj.values)
 
+
 print(obj['a'])
 
 obj['a'] = 100
 print(obj['a'])
 print(obj[['a','c']])
+
+#運算
+print(obj[obj > 50])
+print(obj * 2)
