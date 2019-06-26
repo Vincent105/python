@@ -39,5 +39,22 @@ obj4 = pd.Series(sdata,index=states)
 print(obj4)
 
 # missing判斷
+print("Missing判斷")
 print(pd.isnull(obj4))
 print(pd.notnull(obj4))
+print(obj4.isnull())
+
+print("Series最重要的功能，自動數據對齊－Join")
+print(obj3 + obj4)
+
+# Series關鍵name屬性
+print("Series 關鍵name屬性")
+obj4.name = 'population'
+obj4.index.name = 'state'
+print(obj4)
+
+#Series的索引可以通过赋值的方式就地修改：
+print(obj)
+obj.index = ['Bob', 'Steve', 'Jeff', 'Ryan']
+print(obj)
+
