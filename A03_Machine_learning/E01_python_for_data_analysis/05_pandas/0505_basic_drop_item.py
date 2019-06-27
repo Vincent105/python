@@ -23,3 +23,8 @@ print("axis 1 透過傳遞axis=1 或 axis='columns'刪除數值")
 print(data.drop('two',axis=1))
 print(data.drop(['one','four'],axis='columns'))
 
+print("小心使用inplace，它会销毁所有被删除的数据。")
+print(obj)
+print(obj.drop('c',inplace=True))
+print(obj)
+
