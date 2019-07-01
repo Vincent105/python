@@ -14,7 +14,14 @@ print(df1 + df2)
 
 print("使用df1的add方法，传入df2以及一个fill_value参数： 避免nan值")
 print(df1.add(df2, fill_value=0))
-
-print(1 / df1)
 print(df1)
+print("这两个语句是等价的：")
+print(1 / df1)
+print("使用r針對參數反轉,这两个语句是等价的：")
 print(df1.rdiv(1))
+
+print(df1.radd(1))
+print(df1.rsub(1))
+print(df1.rmul(1))
+print("重新索引时，也可以指定一个填充值：")
+print(df1.reindex(columns=df2.columns, fill_value=0))

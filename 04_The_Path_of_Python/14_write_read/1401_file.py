@@ -1,4 +1,5 @@
 import os
+import glob
 
 print(os.getcwd())
 print(os.path.abspath('.'))
@@ -40,8 +41,23 @@ print(os.listdir('04_The_Path_of_Python\\13_module'))
 totalsize = 0
 for file in os.listdir('04_The_Path_of_Python\\13_module'):
     print(file)
-    totalsize += os.path.getsize(os.path.join('E:\python\\04_The_Path_of_Python\\13_module',file))
-print('file size is:',totalsize)        
+    totalsize += os.path.getsize(os.path.join(
+        'E:\python\\04_The_Path_of_Python\\13_module', file))
+print('file size is:', totalsize)
 
+print("glob方法一：列出特定目錄的所有檔案")
+for file in glob.glob("E:\\python\\04_The_Path_of_Python\\13_module\\*.*"):
+    print(file)
 
+print("glob方法二：列出特定目錄的特定")
+for file in glob.glob(r'E:\\python\\04_The_Path_of_Python\\13_module\\131*.py'):
+    print(file)
 
+print("glob方法三：列出特定目錄的特定檔案")
+for file in glob.glob(r'E:\\python\\04_The_Path_of_Python\\13_module\\131*.*'):
+    print(file)
+
+for dirname,sub_dirnames,filenames in os.walk("E:\\python\\04_The_Path_of_Python\\13_module"):
+    print("目錄名稱",dirname)
+    print("子目錄名稱",sub_dirnames)
+    print("檔案名稱",filenames)

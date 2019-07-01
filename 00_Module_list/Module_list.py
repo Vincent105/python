@@ -1,4 +1,6 @@
 # 內建模組
+import os                               #        
+import glob                             #取得特定工作目錄內容
 import time                             #時間模組
 import math                             #數學模組
 import pprint		                    #漂亮列印字典
@@ -16,6 +18,13 @@ from collections import deque           #構造函數
 
 import matplotlib.pyplot as plt         #繪圖用
 from operator import itemgetter         #通過某個關鍵字排序一個字典列表
+
+
+
+
+
+
+
 
 # 額外模組
 import pyperclip	                    #複製字符串
