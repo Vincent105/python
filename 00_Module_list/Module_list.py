@@ -1,6 +1,7 @@
 # 內建模組
 import os                               #        
 import glob                             #取得特定工作目錄內容
+import shutil                           #檔案或目錄複製、刪除、移動、更改名稱
 import time                             #時間模組
 import math                             #數學模組
 import pprint		                    #漂亮列印字典
@@ -28,8 +29,13 @@ from operator import itemgetter         #通過某個關鍵字排序一個字典
 
 # 額外模組
 import pyperclip	                    #複製字符串
+import send2trash                       # python -m pip install send2trash 
 
-'''爬蟲相關套件'''
+
+
+'''
+爬蟲相關套件
+'''
 # 請求(第三方套件)
 import requests                         # python -m pip install requests         模擬瀏覽器向伺服器發出請求
 import selenium                         # python -m pip install selenium         驅動瀏覽器執行特定動作
@@ -69,8 +75,9 @@ import tornado                          # python -m pip install tornado
                                         # python -m pip install pyspider      
 
 
-
+'''
 #Machine Learning
+'''
 import keras                            # pip install keras
 import tensorflow                       # pip install tensorflow-gpu
 import numpy                            # pip install numpy==1.16.2

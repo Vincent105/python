@@ -68,3 +68,18 @@ if index >= 0:
     print("搜尋的字串在%s的位置" % index)
 else:
     print("搜尋的字串%s不存在%s當中" % (findstr, fn))
+
+print("====數據搜尋(使用rfind()屬性)====")
+msg = "CIA Vincnet told CIA Esther that USB had given to CIA John"
+print("CIA最後出現的位置", msg.rfind("CIA", 0, len(msg)))
+
+print("====分批讀取檔案====")
+chuck = 10
+msg = ''
+with open(fn, encoding="utf-8") as file_obj:
+    while True:
+        txt = file_obj.read(chuck)
+        if not txt:
+            break
+        msg += txt
+print(msg)                    
