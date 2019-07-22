@@ -1,0 +1,20 @@
+import pandas as pd
+import numpy as np
+
+df = pd.DataFrame([[1.4, np.nan], [7.1, -4.5], [np.nan, np.nan], [0.75, -1.3]], index=['a', 'b', 'c', 'd'], columns=['one', 'two'])
+print(df)
+print("sum():调用DataFrame的sum方法将会返回一个含有列的和的Series：")
+print(df.sum())
+print(df.sum(axis=1))
+print("mean():NA值会自动被排除，除非整个切片（这里指的是行或列）都是NA。通过skipna选项可以禁用该功能：")
+print(df.mean(axis='columns',skipna=False))
+print(df.mean(axis='columns',skipna=True))
+print("返回间接统计（比如达到最小值或最大值的索引）：")
+print(df.idxmax())
+print(df.idxmin())
+print("累計加總：")
+print(df.cumsum())
+print("多个汇总统计")
+print(df.describe())
+obj = pd.Series(['a', 'a', 'b', 'c'] * 4)
+print(obj.describe())
