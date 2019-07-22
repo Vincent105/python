@@ -85,3 +85,4 @@ import tensorboard                      # pip install tensorboard
                                         # pip install scipy
 import Matplotlib                       # pip install Matplotlib
 import pandas                           # pip install pandas
+import pandas_datareader                # pip install pandas_datareader
