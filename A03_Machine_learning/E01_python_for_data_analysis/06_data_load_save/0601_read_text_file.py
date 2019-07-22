@@ -30,3 +30,5 @@ print(pf)
 
 result = pd.read_csv('\\python\\A03_Machine_learning\\E01_python_for_data_analysis\\examples\\ex5.csv')
 print(result)    
+
+ 
