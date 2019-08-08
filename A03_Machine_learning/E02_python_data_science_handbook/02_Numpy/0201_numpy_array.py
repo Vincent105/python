@@ -48,4 +48,24 @@ print("创建一个3×3的、 在0~1均匀分布的随机数组成的数组")
 np6 = np.random.random((3,3))
 print(np6)
 
-np.r
+print("创建一个3×3的、 均值为0、 方差为1的正态分布的随机数数组")
+np7 = np.random.normal(0,1,(3,3))
+print(np7)
+
+print("创建一个3×3的、由0, 10)区间的随机整型数组")
+np8 = np.random.randint(0,10,(3,3))
+print(np8)
+
+print("创建一个3×3的单位矩阵")
+np9 = np.eye(3)
+print(np9)
+
+print("创建一个由3个整型数组成的未初始化的数组")
+np10 = np.empty(3)
+print(np10)
+
+print("可以用一个字符串参数来指定数据类型：")
+np1 = np.zeros(10,dtype='int16')
+print(np1)
+np1 = np.zeros(10,dtype=np.int)
+print(np1)
