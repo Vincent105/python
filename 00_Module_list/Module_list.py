@@ -84,5 +84,6 @@ import numpy                            # pip install numpy==1.16.2
 import tensorboard                      # pip install tensorboard
                                         # pip install scipy
 import Matplotlib                       # pip install Matplotlib
+import seaborn                          # pip install seaborn
 import pandas                           # pip install pandas
 import pandas_datareader                # pip install pandas_datareader
