@@ -1,7 +1,8 @@
 # 內建模組
-import os                               #        
+import os                               #系統模組        
 import glob                             #取得特定工作目錄內容
 import shutil                           #檔案或目錄複製、刪除、移動、更改名稱
+import zipfile                          #壓縮模組    
 import time                             #時間模組
 import math                             #數學模組
 import pprint		                    #漂亮列印字典
