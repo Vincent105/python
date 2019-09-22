@@ -1,16 +1,25 @@
+import traceback
+
 # Case 1
 def division(x, y):
     try:
         ans = x / y
     except ZeroDivisionError as e:
+        errlog = open('04_The_Path_of_Python\\15_dubug\\log2.txt','a')
+        errlog.write(traceback.format_exc())
+        errlog.close()
         print('除數不可為0 ', e)
     except TypeError as e:
+        errlog = open('04_The_Path_of_Python\\15_dubug\\log2.txt','a')
+        errlog.write(traceback.format_exc())
+        errlog.close()        
         print('資料型別錯誤', e)
     except:
         print('...')        
     else:
         return ans
-
+    finally:
+        print('程式執行完成')        
 
 print(division(10, 2))
 print(division('a', 'b'))

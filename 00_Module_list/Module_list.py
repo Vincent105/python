@@ -12,6 +12,7 @@ import json                             #将数据结构转储文件，并在程
 import unittest                         #代碼測試工具
 import re                               #正規表達式
 import locale                           #獲取系統編碼
+import traceback                        #log    
 
 from collections import OrderedDict     #紀錄鍵-值添加順序
 from collections import defaultdict     #自動初始化每個 key 剛開始對應的值
