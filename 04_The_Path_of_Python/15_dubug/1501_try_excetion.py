@@ -19,7 +19,7 @@ def division(x, y):
     else:
         return ans
     finally:
-        print('程式執行完成')        
+        print('程式執行完成\n')        
 
 print(division(10, 2))
 print(division('a', 'b'))
