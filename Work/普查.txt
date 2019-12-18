@@ -22,3 +22,20 @@
     (9)檢誤條件 (多表要串myself)
     (10))檢誤條件 (工商06090 語法沒有撰寫判斷null值 sink 會回傳 可為null的物件必須具有值)
     (11)歸戶 修改普查編號經過送審後，relationgroupid會跟著異動
+
+
+
+(1)蒐集一些資訊(a)含唯一檢誤(b)不含唯一檢。
+(2)2台同實體機 單一台配置VM。採用固定資源。獨佔測試一次。
+(3)收集host的資訊。
+
+[]
+os.log 效能日誌logman 一分鐘cpu menory newwork interface  page file  processor
+(a)不跑 跟 (b)正常 (c)及異常 
+獨立vm 也須要測試
+
+ap.log
+
+明天專案會議後半小時內討論
+
+<>
