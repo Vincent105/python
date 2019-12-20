@@ -36,6 +36,14 @@ os.log 效能日誌logman 一分鐘cpu menory newwork interface  page file  proc
 
 ap.log
 
-明天專案會議後半小時內討論
 
-<>
+
+(0)哲倫要那KM也有profile
+(1)測試1Thread 20萬 至少1小時 內部用
+(2)測試2Thread 20萬 至少1小時 內部用
+(3)測試2Thread 20萬 至少1小時 內部用
+
+
+
+今年的困境。
+明年目標與技能
