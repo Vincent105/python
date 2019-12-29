@@ -1,3 +1,6 @@
+import os
+import csv
+
 buyers = [
     ['James', 1030],
     ['Curry', 893],

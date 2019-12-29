@@ -13,6 +13,7 @@ with open('01_Python_Crash_Course\\1001_file_exception\\pi_digits.txt') as file_
 filename = '01_Python_Crash_Course\\1001_file_exception\\pi_digits.txt'
 
 with open(filename) as file_object:
+    
     for line in file_object:
         print(line.rstrip()) 
 
