@@ -6,7 +6,7 @@ print(spam + eggs)
 print(spam + eggs + spam)
 
 spam = spam + 200
-print(spam)v
+print(spam)
 # This program says hello and asks for my name.
 print('Hello world!')
 print('What is your name?')  # ask for their name
