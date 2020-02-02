@@ -9,12 +9,13 @@ def totalBrought(guests,item):
 	for n,i in guests.items():
 		numberBrought += i.get(item,0)	
 	return(numberBrought)
-
+ 
 print('Number of things being brought:')
 print(' - Apples ' + str(totalBrought(allGuests, 'apple')))
-print(' - Apples ' + str(totalBrought(allGuests, 'banana')))
-print(' - Apples ' + str(totalBrought(allGuests, 'cups')))
-print(' - Apples ' + str(totalBrought(allGuests, 'pies')))
+print(' - banana ' + str(totalBrought(allGuests, 'banana')))
+print(' - cups ' + str(totalBrought(allGuests, 'cups')))
+print(' - pies ' + str(totalBrought(allGuests, 'pies')))
+
+print(allGuests.items())
 
 
- 
