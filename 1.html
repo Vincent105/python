@@ -1,0 +1,513 @@
+<table border="1" cellpadding="1" cellspacing="1" style="width: 589px;">
+	<tbody>
+		<tr>
+			<td style="background-color: rgb(255, 220, 220); width: 141px;">&nbsp;</td>
+			<td style="width: 459px; padding: 0px; margin: 0px;" v-for="(card, cIndex) in cardData">
+			<table border="1" cellpadding="0" cellspacing="0" style="width: 454px;">
+				<tbody>
+					<tr>
+						<td style="text-align: center;background-color: rgb(255, 220, 220);">
+						<p>縣市鄉鎮</p>
+						市區代號</td>
+						<td style="text-align: center; background-color: rgb(255, 220, 220); width: 81px;">普查區代號</td>
+						<td style="text-align: center; background-color: rgb(255, 220, 220); width: 92px;">宅號</td>
+						<td style="text-align: center; width: 76px; background-color: rgb(255, 220, 220);">戶號</td>
+						<td style="text-align: center; width: 71px; background-color: rgb(255, 220, 220);">總張數</td>
+						<td style="text-align: center; width: 65px; background-color: rgb(255, 220, 220);">張次</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 141px; height: 10px;">
+			<p>新&nbsp; 增&nbsp; 編&nbsp; 號&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+			</td>
+			<td style="width: 459px; padding: 0px; margin: 0px;" v-for="(card, cIndex) in cardData">
+			<table border="1" cellpadding="0" cellspacing="0" class="lockGroup" style="width: 454px;">
+				<tbody>
+					<tr>
+						<td style="text-align: center; width: 70px;"><input :data-value="card.NB01.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.NB01.DataErrorListColumnId==-1" :haserror="card.NB01.DataErrorListColumnId" class="zipcode" maxlength="4" name="cIndex + '_NB01'" size="4" type="text" v-model="card.NB01.FormValue" /></td>
+						<td style="text-align: center; width: 84px;"><input :data-value="card.NB02.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.NB02.DataErrorListColumnId==-1" :haserror="card.NB02.DataErrorListColumnId" :name="cIndex + '_NB02'" maxlength="3" size="3" type="text" v-model="card.NB02.FormValue" /></td>
+						<td style="text-align: center; width: 91px;"><input :data-value="card.NB03.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.NB03.DataErrorListColumnId==-1" :haserror="card.NB03.DataErrorListColumnId" :name="cIndex + '_NB03'" maxlength="4" size="4" type="text" v-model="card.NB03.FormValue" /></td>
+						<td style="width: 76px; text-align: center;"><input :data-value="card.NB04.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.NB04.DataErrorListColumnId==-1" :haserror="card.NB04.DataErrorListColumnId" :name="cIndex + '_NB04'" maxlength="3" size="3" type="text" v-model="card.NB04.FormValue" /></td>
+						<td style="width: 72px; text-align: center;"><input :data-value="card.NB05.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.NB05.DataErrorListColumnId==-1" :haserror="card.NB05.DataErrorListColumnId" :name="cIndex + '_NB05'" maxlength="2" size="2" type="text" v-model="card.NB05.FormValue" /></td>
+						<td style="width: 64px; text-align: center;"><input :data-value="card.NB06.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.NB06.DataErrorListColumnId==-1" :haserror="card.NB06.DataErrorListColumnId" :name="cIndex + '_NB06'" maxlength="2" size="2" type="text" v-model="card.NB06.FormValue" /></td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 141px;">名&nbsp; 冊&nbsp; 編&nbsp; 號</td>
+			<td style="width: 459px; padding: 0px; margin: 0px;" v-for="(card, cIndex) in cardData">
+			<table border="1" cellpadding="0" cellspacing="0" class="lockGroup" style="width: 455px;">
+				<tbody>
+					<tr>
+						<td style="text-align: center; width: 70px;"><input :data-value="card.A001.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.A001.DataErrorListColumnId==-1" :haserror="card.A001.DataErrorListColumnId" :name="cIndex + '_A001'" class="zipcode" maxlength="4" size="4" type="text" v-model="card.A001.FormValue" /></td>
+						<td style="text-align: center; width: 80px;"><input :data-value="card.A002.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.A002.DataErrorListColumnId==-1" :haserror="card.A002.DataErrorListColumnId" :name="cIndex + '_A002'" maxlength="3" size="3" type="text" v-model="card.A002.FormValue" /></td>
+						<td style="text-align: center; width: 90px;"><input :data-value="card.A003.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.A003.DataErrorListColumnId==-1" :haserror="card.A003.DataErrorListColumnId" :name="cIndex + '_A003'" maxlength="4" size="4" type="text" v-model="card.A003.FormValue" /></td>
+						<td style="width: 75px; text-align: center;"><input :data-value="card.A004.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.A004.DataErrorListColumnId==-1" :haserror="card.A004.DataErrorListColumnId" :name="cIndex + '_A004'" maxlength="3" size="3" type="text" v-model="card.A004.FormValue" /></td>
+						<td style="width: 72px; text-align: center;"><input :data-value="card.A005.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.A005.DataErrorListColumnId==-1" :haserror="card.A005.DataErrorListColumnId" :name="cIndex + '_A005'" maxlength="2" size="2" type="text" v-model="card.A005.FormValue" /></td>
+						<td style="width: 64px; text-align: center;"><input :data-value="card.A006.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.A006.DataErrorListColumnId==-1" :haserror="card.A006.DataErrorListColumnId" :name="cIndex + '_A006'" maxlength="2" size="2" type="text" v-model="card.A006.FormValue" /></td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 141px;">增&nbsp; 修&nbsp; 編&nbsp; 號</td>
+			<td style="width: 459px; padding: 0px; margin: 0px;" v-for="(card, cIndex) in cardData">
+			<table border="1" cellpadding="0" cellspacing="0" class="lockGroup" style="width: 454px;">
+				<tbody>
+					<tr>
+						<td style="text-align: center; width: 70px;"><input :data-value="card.B001.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.B001.DataErrorListColumnId==-1" :haserror="card.B001.DataErrorListColumnId" :name="cIndex + '_B001'" class="zipcode" maxlength="4" size="4" style="margin-top:5px" type="text" v-model="card.B001.FormValue" /></td>
+						<td style="text-align: center; width: 82px;"><input :data-value="card.B002.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.B002.DataErrorListColumnId==-1" :haserror="card.B002.DataErrorListColumnId" :name="cIndex + '_B002'" maxlength="3" size="3" style="margin-top:5px" type="text" v-model="card.B002.FormValue" /></td>
+						<td style="text-align: center; width: 90px;"><input :data-value="card.B003.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.B003.DataErrorListColumnId==-1" :haserror="card.B003.DataErrorListColumnId" maxlength="4" name="0_B003" size="4" style="margin-top:5px" type="text" v-model="card.B003.FormValue" /></td>
+						<td style="width: 76px; text-align: center;"><input :data-value="card.B004.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.B004.DataErrorListColumnId==-1" :haserror="card.B004.DataErrorListColumnId" :name="cIndex + '_B004'" maxlength="3" size="3" style="margin-top:5px" type="text" v-model="card.B004.FormValue" /></td>
+						<td style="width: 72px; text-align: center;"><input :data-value="card.B005.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.B005.DataErrorListColumnId==-1" :haserror="card.B005.DataErrorListColumnId" :name="cIndex + '_B005'" maxlength="2" size="2" style="margin-top:5px" type="text" v-model="card.B005.FormValue" /></td>
+						<td style="width: 64px; text-align: center;"><input :data-value="card.B006.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.B006.DataErrorListColumnId==-1" :haserror="card.B006.DataErrorListColumnId" :name="cIndex + '_B006'" maxlength="2" size="2" style="margin-top:5px" type="text" v-model="card.B006.FormValue" /></td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<details data-bordered="true" data-collapse="true" data-color="" data-cssclass="" data-hidesummary="" data-maxheight="" data-monospace="true" data-wrap="" id="headerPlace" open="" style="border: 1px solid rgb(221, 221, 221);" undefined=""><summary class="pre-title" style="font-weight: bold;font-size:18px; padding: 2px 12px;">點擊切換開闔</summary>
+
+<table border="1" cellpadding="1" cellspacing="1" style="width: 569px;">
+	<tbody>
+		<tr>
+			<td style="background-color: rgb(255, 220, 220); width: 115px;"><label class="caption">地址</label></td>
+			<td class="lockGroup" style="width: 446px;" v-for="(card, cIndex) in cardData"><input :data-value="card.MADR.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.MADR.DataErrorListColumnId==-1" :false-value="0" :haserror="card.MADR.DataErrorListColumnId" :id="cIndex +'_MADR'" :name="cIndex + '_MADR'" :true-value="1" type="checkbox" v-model="card.MADR.FormValue" />&nbsp;套印<label for="0_MADR">地址</label>&nbsp; &nbsp; &nbsp;<input :data-value="card.C000.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.C000.DataErrorListColumnId==-1" :false-value="0" :haserror="card.C000.DataErrorListColumnId" :id="cIndex +'_C000'" :name="cIndex + '_C000'" :true-value="1" type="checkbox" v-model="card.C000.FormValue" /> <label for="0_C000">與名冊原列地址相同&nbsp;&nbsp;</label><input :data-value="card.D000.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.C000.DataErrorListColumnId==-1" :false-value="0" :haserror="card.D000.DataErrorListColumnId" :id="cIndex +'_D000'" :name="cIndex + '_D000'" :true-value="1" type="checkbox" v-model="card.D000.FormValue" />&nbsp;新增宅(戶)或<label for="0_D000">地址有修正&nbsp;</label></td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(255, 220, 220); width: 115px;">
+			<p>增修地址</p>
+			</td>
+			<td class="lockGroup" style="width: 446px;" v-for="(card, cIndex) in cardData">
+			<p>縣市:<input :data-value="card.D001.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.D001.DataErrorListColumnId==-1" :haserror="card.D001.DataErrorListColumnId" :name="cIndex + '_D001'" class="zipcode2" maxlength="6" size="12" type="text" v-model="card.D001.FormValue" /> 鄉鎮市區:<input :data-value="card.D002.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.D002.DataErrorListColumnId==-1" :haserror="card.D002.DataErrorListColumnId" :name="cIndex + '_D002'" maxlength="8" size="16" type="text" v-model="card.D002.FormValue" /></p>
+
+			<p>村里:<input :data-value="card.D003.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.D003.DataErrorListColumnId==-1" :haserror="card.D003.DataErrorListColumnId" :name="cIndex + '_D003'" maxlength="10" size="20" type="text" v-model="card.D003.FormValue" /> 鄰:<input :data-value="card.D004.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.D004.DataErrorListColumnId==-1" :haserror="card.D004.DataErrorListColumnId" :name="cIndex + '_D004'" maxlength="8" size="16" type="text" v-model="card.D004.FormValue" /><br />
+			<input :data-value="card.D005.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.D005.DataErrorListColumnId==-1" :haserror="card.D005.DataErrorListColumnId" :name="cIndex + '_D005'" maxlength="50" size="50" type="text" v-model="card.D005.FormValue" /></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(255, 220, 220); height: 30px; width: 115px;">
+			<p>&nbsp;</p>
+
+			<p>&nbsp;</p>
+
+			<p>訪查員註記欄</p>
+
+			<p>&nbsp;</p>
+
+			<p>&nbsp;</p>
+
+			<p>&nbsp;</p>
+			</td>
+			<td class="lockGroup" style="width: 446px;" v-for="(card, cIndex) in cardData">
+			<p><input :data-value="card.M001.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.M001.DataErrorListColumnId==-1" :haserror="card.M001.DataErrorListColumnId" :id="cIndex +'_M001_'+1" :name="cIndex + '_M001'" type="radio" v-model="card.M001.FormValue" value="1" />1本戶有人經常居住共 <input :data-value="card.M002.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.M002.DataErrorListColumnId==-1" :haserror="card.M002.DataErrorListColumnId" :name="cIndex + '_M002'" maxlength="3" size="3" type="text" v-model="card.M002.FormValue" />人</p>
+
+			<p><input :data-value="card.M001.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.M001.DataErrorListColumnId==-1" :haserror="card.M001.DataErrorListColumnId" :id="cIndex +'_M001_'+2" :name="cIndex + '_M001'" type="radio" v-model="card.M001.FormValue" value="2" />2 本戶無人經常居住但有人設籍(住宅)</p>
+
+			<p><input :data-value="card.M001.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.M001.DataErrorListColumnId==-1" :haserror="card.M001.DataErrorListColumnId" :id="cIndex +'_M001_'+3" :name="cIndex + '_M001'" type="radio" v-model="card.M001.FormValue" value="3" />3 本戶無人經常居住但有人設籍(非住宅)</p>
+
+			<p><input :data-value="card.M001.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.M001.DataErrorListColumnId==-1" :haserror="card.M001.DataErrorListColumnId" :id="cIndex +'_M001_'+4" :name="cIndex + '_M001'" type="radio" v-model="card.M001.FormValue" value="4" />4 無人經常居住且無人設籍之住宅</p>
+
+			<p><input :data-value="card.M001.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.M001.DataErrorListColumnId==-1" :haserror="card.M001.DataErrorListColumnId" :id="cIndex +'_M001_'+5" :name="cIndex + '_M001'" type="radio" v-model="card.M001.FormValue" value="5" />5 本戶NC&nbsp; &nbsp;<input :data-value="card.M003.PreviousData" :disabled="!unlockAllColumn &amp;&amp; !card.M003.IsManual &amp;&amp; card.M003.DataErrorListColumnId==-1" :haserror="card.M003.DataErrorListColumnId" :id="cIndex + '_M003_' + 1" :name="cIndex + '_M003'" type="radio" v-model="card.M003.FormValue" v-on:click="unLockFollowColumn($event)" value="1" /> (1)已採網路填報 <input :data-value="card.M003.PreviousData" :disabled="!unlockAllColumn &amp;&amp; !card.M003.IsManual &amp;&amp; card.M003.DataErrorListColumnId==-1" :haserror="card.M003.DataErrorListColumnId" :id="cIndex + '_M003_' + 2" :name="cIndex + '_M003'" type="radio" v-model="card.M003.FormValue" v-on:click="unLockFollowColumn($event)" value="2" /> (2)無此地址或無此宅</p>
+
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input :data-value="card.M003.PreviousData" :disabled="!unlockAllColumn &amp;&amp; !card.M003.IsManual &amp;&amp; card.M003.DataErrorListColumnId==-1" :haserror="card.M003.DataErrorListColumnId" :id="cIndex + '_M003_' + 3" :name="cIndex + '_M003'" type="radio" v-model="card.M003.FormValue" v-on:click="unLockFollowColumn($event)" value="3" />(3)其他&nbsp; &nbsp;( <input :data-value="card.M004.PreviousData" :disabled="!unlockAllColumn &amp;&amp; !card.M004.IsManual &amp;&amp; card.M004.DataErrorListColumnId==-1" :haserror="card.M004.DataErrorListColumnId" :id="cIndex + '_M004_' + 1" :name="cIndex + '_M004'" type="radio" v-model="card.M004.FormValue" v-on:click="unLockFollowColumn($event)" value="1" /> ①住宅 <input :data-value="card.M004.PreviousData" :disabled="!unlockAllColumn &amp;&amp; !card.M004.IsManual &amp;&amp; card.M004.DataErrorListColumnId==-1" :haserror="card.M004.DataErrorListColumnId" :id="cIndex + '_M004_' + 2" :name="cIndex + '_M004'" type="radio" v-model="card.M004.FormValue" v-on:click="unLockFollowColumn($event)" value="2" />②非住宅) <span style="color:green">(停答)</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(255, 220, 220); height: 30px; width: 115px;">
+			<p>備註欄</p>
+			</td>
+			<td class="lockGroup" style="width: 446px;" v-for="(card, cIndex) in cardData">
+			<p><input :data-value="card.M005.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.M005.DataErrorListColumnId==-1" :false-value="0" :haserror="card.M005.DataErrorListColumnId" :id="cIndex +'_M005'" :name="cIndex + '_M005'" :true-value="1" type="checkbox" v-model="card.M005.FormValue" value="1" />若有備註請勾選</p>
+
+			<p><input :data-value="card.M006.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.M006.DataErrorListColumnId==-1" :haserror="card.M006.DataErrorListColumnId" :name="cIndex + '_M006'" maxlength="50" style="width:400px;height:40px;" type="text" v-model="card.M006.FormValue" /></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 115px;">
+			<p><label class="caption">一、住宅狀況</label></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(255, 220, 220); width: 115px;">
+			<p>&nbsp;</p>
+
+			<p>&nbsp;</p>
+
+			<p>[1]本宅居住與使</p>
+
+			<p>用情形</p>
+			</td>
+			<td class="lockGroup" style="width: 446px;" v-for="(card, cIndex) in cardData"><input :data-value="card.D01000.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.D01000.DataErrorListColumnId==-1" :haserror="card.D01000.DataErrorListColumnId" :id="cIndex +'_D01000_'+1" :name="cIndex + '_D01000'" type="radio" v-model="card.D01000.FormValue" v-on:click="unLockFollowColumn($event)" value="1" /><label for="0_D01000_1">1.有人經常居住住宅<span v-show="card.D01000.FormValue == 1"><label>，目前使用情形為</label><select :data-follow="cIndex + '_D01000'" :data-range="[1]" :data-value="card.D01100.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.D01100.DataErrorListColumnId==-1" :haserror="card.D01100.DataErrorListColumnId" :id="cIndex +'_D01100'" :name="cIndex + '_D01100'" v-model="card.D01100.FormValue"><option value="0">---</option><option value="1">1.住家專用</option><option value="2">2.兼工業用</option><option value="3">3.兼商業或服務業用</option><option value="4">4.兼農業用</option> </select>&nbsp; &nbsp;</span></label>
+			<p><label for="0_D01000_1"><span v-show="card.D01000.FormValue == 1">&nbsp; &nbsp; &nbsp; &nbsp;本住宅有<input :data-follow="cIndex + '_D01000'" :data-range="[1]" :data-value="card.D01101.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.D01101.DataErrorListColumnId==-1" :haserror="card.D01101.DataErrorListColumnId" :name="cIndex + '_D01101'" class="textNumber" maxlength="2" size="2" type="text" v-model="card.D01101.FormValue" />房&nbsp;&nbsp;&nbsp;&nbsp;<input :data-follow="cIndex + '_D01000'" :data-range="[1]" :data-value="card.D01102.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.D01102.DataErrorListColumnId==-1" :haserror="card.D01102.DataErrorListColumnId" :name="cIndex + '_D01102'" class="textNumber" maxlength="1" size="1" type="text" v-model="card.D01102.FormValue" />廳&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;衛浴<input :data-follow="cIndex + '_D01000'" :data-range="[1]" :disabled="!unlockAllColumn &amp;&amp; card.D01103.DataErrorListColumnId==-1" :haserror="card.D01103.DataErrorListColumnId" :name="cIndex + '_D01103'" class="textNumber" maxlength="2" size="2" type="text" v-model="bathArray[cIndex].bathA" />.<input :data-follow="cIndex + '_D01000'" :data-range="[1]" :disabled="!unlockAllColumn &amp;&amp; card.D01103.DataErrorListColumnId==-1" :haserror="card.D01103.DataErrorListColumnId" :name="cIndex + '_D01103'" class="textNumber" maxlength="1" size="1" type="text" v-model="bathArray[cIndex].bathB" />套</span></label></p>
+			<label for="0_D01000_1"> <input :data-value="card.D01000.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.D01000.DataErrorListColumnId==-1" :haserror="card.D01000.DataErrorListColumnId" :id="cIndex +'_D01000_'+2" :name="cIndex + '_D01000'" type="radio" v-model="card.D01000.FormValue" v-on:click="unLockFollowColumn($event)" value="2" /><label for="0_D01000_2">2.無人經常居住住宅</label><span v-show="card.D01000.FormValue == 2"><label>，目前使用情形為</label></span> </label>
+
+			<p><label for="0_D01000_1"><span v-show="card.D01000.FormValue == 2">&nbsp; &nbsp; &nbsp; &nbsp;<select :data-follow="cIndex + '_D01000'" :data-range="[2]" :data-value="card.D01200.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.D01200.DataErrorListColumnId==-1" :haserror="card.D01200.DataErrorListColumnId" :name="cIndex + '_D01200'" v-model="card.D01200.FormValue"><option value="0">---</option><option value="1">1.偶爾自住</option><option value="2">2.自住以外用途(如辦公室、倉庫等)</option><option value="3">3.目前沒有使用</option></select></span></label></p>
+
+			<p><label for="0_D01000_1"><input :data-value="card.D01000.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.D01000.DataErrorListColumnId==-1" :haserror="card.D01000.DataErrorListColumnId" :id="cIndex +'_D01000_'+3" :name="cIndex + '_D01000'" type="radio" v-model="card.D01000.FormValue" v-on:click="unLockFollowColumn($event)" value="3" />3.有人經常居住的其他房屋【指住宅以外的房屋，如廠房、辦&nbsp;&nbsp;&nbsp;</label></p>
+
+			<p><span style="font-size: unset; font-weight: unset;">&nbsp; &nbsp; &nbsp; &nbsp;公大樓、旅館、宿舍（單身、學生）、醫院等】</span></p>
+
+			<p><label for="0_D01000_1"><input :data-value="card.D01000.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.D01000.DataErrorListColumnId==-1" :haserror="card.D01000.DataErrorListColumnId" :id="cIndex +'_D01000_'+4" :name="cIndex + '_D01000'" type="radio" v-model="card.D01000.FormValue" v-on:click="unLockFollowColumn($event)" value="4" />4.有人經常居住的其他處所【非屬房屋，如帳篷、路邊、地下</label><span style="font-size: unset; font-weight: unset;">道等】</span></p>
+			<label for="0_D01000_1"> </label></td>
+		</tr>
+		<tr>
+			<td style="width: 115px;">
+			<p><label class="caption">二、住戶狀況</label></p>
+			</td>
+		</tr>
+		<tr>
+			<td class="head" style="width: 115px;">
+			<p>[1]戶別</p>
+
+			<p>&nbsp;</p>
+			</td>
+			<td class="lockGroup" style="width: 446px;" v-for="(card, cIndex) in cardData"><input :data-value="card.D02100.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.D02100.DataErrorListColumnId==-1" :haserror="card.D02100.DataErrorListColumnId" :id="cIndex +'_D02100_'+1" :name="cIndex + '_D02100'" type="radio" v-model="card.D02100.FormValue" value="1" />1.普通住戶 <span style="color:green"> 請續填問項[2]~[5]</span><br />
+			<input :data-value="card.D02100.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.D02100.DataErrorListColumnId==-1" :haserror="card.D02100.DataErrorListColumnId" :id="cIndex +'_D02100_'+2" :name="cIndex + '_D02100'" type="radio" v-model="card.D02100.FormValue" value="2" />2.非普通住戶<span v-show="card.D02100.FormValue==2">，類型為<select :data-follow="cIndex + '_D02100'" :data-value="card.D02120.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.D02120.DataErrorListColumnId==-1" :haserror="card.D02120.DataErrorListColumnId" :name="cIndex + '_D02120'" v-model="card.D02120.FormValue"><option value="0">---</option><option value="1">1.安養中心</option><option value="2">2.醫療院所</option><option value="3">3.宿舍(單身、學生等)</option><option value="4">4.教堂、寺廟</option><option value="5">5.旅館</option><option value="6">6.其他</option></select> </span></td>
+		</tr>
+		<tr>
+			<td class="head" style="width: 115px;">
+			<p>[2]本戶居住之住宅(房屋)所有權屬</p>
+			</td>
+			<td class="lockGroup" style="width: 446px;" v-for="(card, cIndex) in cardData"><select :data-value="card.D02200.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.D02200.DataErrorListColumnId==-1" :haserror="card.D02200.DataErrorListColumnId" :name="cIndex + '_D02200'" v-model="card.D02200.FormValue"><option value="0">---</option><option value="1">1.自有</option><option value="2">2.不住在本戶的配偶、父母或子女所擁有</option><option value="3">3.租用</option><option value="4">4.配住</option><option value="5">5.其他(含借住)</option></select></td>
+		</tr>
+		<tr>
+			<td class="head" style="width: 115px;">
+			<p>[3]本戶經常居住成員除 本住宅(房屋)外, 是否還有其他自有住宅</p>
+			</td>
+			<td class="lockGroup" style="width: 446px;" v-for="(card, cIndex) in cardData"><select :data-value="card.D02300.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.D02300.DataErrorListColumnId==-1" :haserror="card.D02300.DataErrorListColumnId" :name="cIndex + '_D02300'" v-model="card.D02300.FormValue"><option value="0">---</option><option value="1">1.有其他的自有住宅</option><option value="2">2.無其他的自有住宅</option></select></td>
+		</tr>
+		<tr>
+			<td class="head" style="width: 115px;">
+			<p>[4]本戶經常居住成員中,最早住進本住宅 (房屋)的時間</p>
+			</td>
+			<td class="lockGroup" style="width: 446px;" v-for="(card, cIndex) in cardData"><select :data-value="card.D02400.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.D02400.DataErrorListColumnId==-1" :haserror="card.D02400.DataErrorListColumnId" :name="cIndex + '_D02400'" v-model="card.D02400.FormValue"><option value="0">---</option><option value="1">1.民國69年以前</option><option value="2">2.民國70-79年</option><option value="3">3.民國80-89年</option><option value="4">4.民國90-99年</option><option value="5">5.民國100-104年</option><option value="6">6.民國105年</option><option value="7">7.民國106年</option><option value="8">8.民國107年</option><option value="9">9.民國108年</option>&gt;<option value="10">10.民國109年</option><!--</select--></select></td>
+		</tr>
+		<tr>
+			<td style="width: 115px;background-color: #ffdcdc;">
+			<p>[5]本戶經常居住</p>
+
+			<p>成員在家裡是否</p>
+
+			<p>可以上網</p>
+			</td>
+			<td class="lockGroup" style="width: 446px;" v-for="(card, cIndex) in cardData"><input :data-value="card.D02500.PreviousData" :disabled="!unlockAllColumn &amp;&amp; !card.D02500.IsManual &amp;&amp; card.D02500.DataErrorListColumnId==-1" :haserror="card.D02500.DataErrorListColumnId" :id="cIndex+'_D02500_'+1" :name="cIndex+'_D02500'" type="radio" v-model="card.D02500.FormValue" v-on:click="unLockFollowColumn($event)" value="1" /> 1 是,家裡可以上網之設備<span style="color:green;"></span>
+			<table class="border-hide" style="margin-left: 20px; border: none; width: 406px;">
+				<tbody>
+					<tr>
+						<td>
+						<p><input :data-value="card.D02501.PreviousData" :disabled="!unlockAllColumn &amp;&amp; !card.D02501.IsManual &amp;&amp; card.D02501.DataErrorListColumnId==-1" :false-value="0" :haserror="card.D02501.DataErrorListColumnId" :id="cIndex + '_D02501'" :name="cIndex + '_D02501'" :true-value="1" type="checkbox" v-model="card.D02501.FormValue" /> (1)桌上型電腦</p>
+
+						<p><input :data-value="card.D02502.PreviousData" :disabled="!unlockAllColumn &amp;&amp; !card.D02502.IsManual &amp;&amp; card.D02502.DataErrorListColumnId==-1" :false-value="0" :haserror="card.D02502.DataErrorListColumnId" :id="cIndex + '_D02502'" :name="cIndex + '_D02502'" :true-value="1" type="checkbox" v-model="card.D02502.FormValue" /> (2)筆記型電腦</p>
+						</td>
+						<td>
+						<p><input :data-value="card.D02503.PreviousData" :disabled="!unlockAllColumn &amp;&amp; !card.D02503.IsManual &amp;&amp; card.D02503.DataErrorListColumnId==-1" :false-value="0" :haserror="card.D02503.DataErrorListColumnId" :id="cIndex + '_D02503'" :name="cIndex + '_D02503'" :true-value="1" type="checkbox" v-model="card.D02503.FormValue" /> (3)平板電腦</p>
+
+						<p><input :data-value="card.D02504.PreviousData" :disabled="!unlockAllColumn &amp;&amp; !card.D02504.IsManual &amp;&amp; card.D02504.DataErrorListColumnId==-1" :false-value="0" :haserror="card.D02504.DataErrorListColumnId" :id="cIndex + '_D02504'" :name="cIndex + '_D02504'" :true-value="1" type="checkbox" v-model="card.D02504.FormValue" /> (4)手機</p>
+						</td>
+						<td style="width: 181px;">
+						<p><input :data-value="card.D02505.PreviousData" :disabled="!unlockAllColumn &amp;&amp; !card.D02505.IsManual &amp;&amp; card.D02505.DataErrorListColumnId==-1" :false-value="0" :haserror="card.D02505.DataErrorListColumnId" :id="cIndex + '_D02505'" :name="cIndex + '_D02505'" :true-value="1" type="checkbox" v-model="card.D02505.FormValue" /> (5)智慧型家電</p>
+
+						<p><input :data-value="card.D02506.PreviousData" :disabled="!unlockAllColumn &amp;&amp; !card.D02506.IsManual &amp;&amp; card.D02506.DataErrorListColumnId==-1" :false-value="0" :haserror="card.D02506.DataErrorListColumnId" :id="cIndex + '_D02506'" :name="cIndex + '_D02506'" :true-value="1" type="checkbox" v-model="card.D02506.FormValue" /> (6)其他<span></span><input :data-value="card.D0250M.PreviousData" :disabled="!unlockAllColumn &amp;&amp; !card.D0250M.IsManual &amp;&amp; card.D0250M.DataErrorListColumnId==-1" :haserror="card.D0250M.DataErrorListColumnId" :name="cIndex + '_D0250M'" maxlength="12" size="12" type="text" v-model="card.D0250M.FormValue" /><span></span></p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<input :data-value="card.D02500.PreviousData" :disabled="!unlockAllColumn &amp;&amp; !card.D02500.IsManual &amp;&amp; card.D02500.DataErrorListColumnId==-1" :haserror="card.D02500.DataErrorListColumnId" :id="cIndex+'_D02500_'+2" :name="cIndex+'_D02500'" type="radio" v-model="card.D02500.FormValue" v-on:click="unLockFollowColumn($event)" value="2" /> 2 否,家裡無法上網</td>
+		</tr>
+	</tbody>
+</table>
+</details>
+
+<table border="1" cellpadding="1" cellspacing="1" style="width: 590px;">
+	<tbody>
+		<tr>
+			<td style="width: 129px;">
+			<p><label class="caption">三、人口狀況</label></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(255, 220, 220); width: 129px;"><span style="white-space: nowrap;">表單資訊</span></td>
+			<td class="lockGroup" style="width: 458px;" v-for="(card, cIndex) in cardData">
+			<div class="HTB">
+			<div class="TR">
+			<div class="TC">人口序號: <input :data-value="card.E00000.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E00000.DataErrorListColumnId==-1" :haserror="card.E00000.DataErrorListColumnId" :name="cIndex + '_E00000'" maxlength="2" size="2" type="text" v-model="card.E00000.FormValue" /></div>
+			</div>
+			</div>
+			<input :data-value="card.E00001.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E00001.DataErrorListColumnId==-1" :false-value="0" :haserror="card.E00001.DataErrorListColumnId" :id="cIndex + '_E00001'" :name="cIndex + '_E00001'" :true-value="1" type="checkbox" v-model="card.E00001.FormValue" /> <label :for="cIndex + '_E00001'">戶籍已遷出且未常住;已死亡;已在另一戶查填,請續查下一位</label></td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(255, 220, 220); width: 129px;"><span style="width:200px">[1]姓名</span></td>
+			<td class="lockGroup" style="width: 458px;" v-for="(card, cIndex) in cardData"><input :data-value="card.E01000.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E01000.DataErrorListColumnId==-1" :haserror="card.E01000.DataErrorListColumnId" :name="cIndex + '_E01000'" maxlength="10" size="24" type="text" v-model="card.E01000.FormValue" />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;年齡&nbsp;<span></span><input :data-value="card.AGE.PreviousData" :disabled="!unlockAllColumn &amp;&amp; !card.AGE.IsManual &amp;&amp; card.AGE.DataErrorListColumnId==-1" :haserror="card.AGE.DataErrorListColumnId" :name="cIndex + '_AGE'" maxlength="3" size="3" type="text" v-model="card.AGE.FormValue" /><span></span></td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(255, 220, 220); width: 129px;">
+			<p>[2]性別及出生年</p>
+
+			<p>月日</p>
+			</td>
+			<td class="lockGroup" style="width: 458px;" v-for="(card, cIndex) in cardData"><select :data-value="card.E02000.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E02000.DataErrorListColumnId==-1" :haserror="card.E02000.DataErrorListColumnId" :name="cIndex + '_E02000'" v-model="card.E02000.FormValue"><option value="0">---</option><option value="1">1.男</option><option value="2">2.女</option></select> &nbsp;&nbsp;&nbsp;&nbsp; 民國<input :data-value="card.E02001.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E02001.DataErrorListColumnId==-1" :haserror="card.E02001.DataErrorListColumnId" :name="cIndex + '_E02001'" maxlength="3" size="3" type="text" v-model="card.E02001.FormValue" />年 &nbsp;&nbsp;&nbsp;&nbsp;<input :data-value="card.E02002.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E02002.DataErrorListColumnId==-1" :haserror="card.E02002.DataErrorListColumnId" :name="cIndex + '_E02002'" maxlength="2" size="2" type="text" v-model="card.E02002.FormValue" />月 &nbsp;&nbsp;&nbsp;&nbsp;<input :data-value="card.E02003.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E02003.DataErrorListColumnId==-1" :haserror="card.E02003.DataErrorListColumnId" :name="cIndex + '_E02003'" maxlength="2" size="2" type="text" v-model="card.E02003.FormValue" />日 &nbsp;&nbsp;&nbsp;&nbsp; <input :data-value="card.E02004.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E02004.DataErrorListColumnId==-1" :false-value="0" :haserror="card.E02004.DataErrorListColumnId" :id="cIndex + '_E02004'" :name="cIndex + '_E02004'" :true-value="1" type="checkbox" v-model="card.E02004.FormValue" /> <label :for="cIndex + '_E02004'">民前</label></td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(255, 220, 220); width: 129px;">
+			<p>[3]是否為本國籍</p>
+			</td>
+			<td class="lockGroup" style="width: 458px;" v-for="(card, cIndex) in cardData"><select :data-value="card.E03001.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E03001.DataErrorListColumnId==-1" :haserror="card.E03001.DataErrorListColumnId" :name="cIndex + '_E03001'" v-model="card.E03001.FormValue"><option value="0">---</option><option value="1">1.本國籍</option><option value="2">2.非本國籍</option></select>
+			<p><span>&nbsp; &nbsp;人口判定編號&nbsp; &nbsp; &nbsp;</span><input :data-value="card.E03002.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E03002.DataErrorListColumnId==-1" :haserror="card.E03002.DataErrorListColumnId" :name="cIndex + '_E03002'" maxlength="6" size="12" style="width:75px;" type="text" v-model="card.E03002.FormValue" /></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(255, 220, 220); width: 129px;">
+			<p>[4]與戶長關係</p>
+			</td>
+			<td class="lockGroup" style="width: 458px;" v-for="(card, cIndex) in cardData"><select :data-value="card.E04000.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E04000.DataErrorListColumnId==-1" :haserror="card.E04000.DataErrorListColumnId" :name="cIndex + '_E04000'" v-model="card.E04000.FormValue"><option value="0">---</option><option value="1">1.戶長</option><option value="2">2.配偶</option><option value="3">3.同居伴侶</option><option value="4">4.父母</option><option value="5">5.配偶之父母</option><option value="6">6.(外)祖父母</option><option value="7">7.子女</option><option value="8">8.子女之配偶</option><option value="9">9.(外)孫及其配偶</option><option value="10">10.兄弟姊妹及其配偶</option><option value="11">11.其他親屬</option><option value="12">12.室友</option><option value="13">13.受僱人</option><option value="14">14.寄居(籍)人</option> </select></td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(255, 220, 220); width: 129px;">
+			<p>[5]婚姻狀況</p>
+			</td>
+			<td class="lockGroup" style="width: 458px;" v-for="(card, cIndex) in cardData"><select :data-value="card.E05000.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E05000.DataErrorListColumnId==-1" :haserror="card.E05000.DataErrorListColumnId" :name="cIndex + '_E05000'" v-model="card.E05000.FormValue"><option value="0">---</option><option value="1">1.未婚</option><option value="2">2.有配偶</option><option value="3">3.有同居伴侶</option><option value="4">4.離婚(含分居)</option><option value="5">5.喪偶</option></select></td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(255, 220, 220); width: 129px;">
+			<p>[6]教育狀況</p>
+
+			<p>(1)在學情形及教</p>
+
+			<p>育程度</p>
+			</td>
+			<td class="lockGroup" style="width: 458px;" v-for="(card, cIndex) in cardData">
+			<p><input :data-value="card.E06100.PreviousData" :disabled="!unlockAllColumn &amp;&amp; !card.E06100.IsManual &amp;&amp; card.E06100.DataErrorListColumnId==-1" :haserror="card.E06100.DataErrorListColumnId" :id="cIndex + '_E06100_' + 1" :name="cIndex + '_E06100'" type="radio" v-model="card.E06100.FormValue" v-on:click="unLockFollowColumn($event)" value="1" /> <label :for="cIndex + '_E06100_' + 1">1.學齡前兒童&nbsp; &nbsp;</label><select :data-follow="cIndex + '_E06100' " :data-value="card.E06101.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E06101.DataErrorListColumnId==-1" :haserror="card.E06101.DataErrorListColumnId" :name="cIndex + '_E06101'" v-model="card.E06101.FormValue"><option value="0">---</option><option value="1">1.已上幼兒園</option><option value="2">2.托育</option><option value="3">3.由家人照顧</option> </select></p>
+
+			<p><input :data-value="card.E06100.PreviousData" :disabled="!unlockAllColumn &amp;&amp; !card.E06100.IsManual &amp;&amp; card.E06100.DataErrorListColumnId==-1" :haserror="card.E06100.DataErrorListColumnId" :id="cIndex + '_E06100_' + 2" :name="cIndex + '_E06100'" type="radio" v-model="card.E06100.FormValue" v-on:click="unLockFollowColumn($event)" value="2" /> <label :for="cIndex + '_E06100_' + 2">2.在學</label><br />
+			<input :data-value="card.E06100.PreviousData" :disabled="!unlockAllColumn &amp;&amp; !card.E06100.IsManual &amp;&amp; card.E06100.DataErrorListColumnId==-1" :haserror="card.E06100.DataErrorListColumnId" :id="cIndex + '_E06100_' + 3" :name="cIndex + '_E06100'" type="radio" v-model="card.E06100.FormValue" v-on:click="unLockFollowColumn($event)" value="3" /> <label :for="cIndex + '_E06100_' + 3">3.畢業&nbsp; &nbsp; &nbsp; &nbsp;</label><select :data-follow="cIndex + '_E06100'" :data-value="card.E06102.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E06102.DataErrorListColumnId==-1" :haserror="card.E06102.DataErrorListColumnId" :name="cIndex + '_E06102'" v-model="card.E06102.FormValue"><option value="0">---</option><option value="1">1.國小</option><option value="2">2.國(初)中</option><option value="3">3.高級中等(高中、高職、5年制專科前3年)</option><option value="4">4.專科</option><option value="5">5.大學</option><option value="6">6.碩士</option><option value="7">7.博士</option> </select><br />
+			<input :data-value="card.E06100.PreviousData" :disabled="!unlockAllColumn &amp;&amp; !card.E06100.IsManual &amp;&amp; card.E06100.DataErrorListColumnId==-1" :haserror="card.E06100.DataErrorListColumnId" :id="cIndex + '_E06100_' + 4" :name="cIndex + '_E06100'" type="radio" v-model="card.E06100.FormValue" v-on:click="unLockFollowColumn($event)" value="4" /> <label :for="cIndex + '_E06100_' + 4">4.肄業&nbsp; &nbsp; &nbsp; &nbsp;</label></p>
+
+			<p><input :data-value="card.E06100.PreviousData" :disabled="!unlockAllColumn &amp;&amp; !card.E06100.IsManual &amp;&amp; card.E06100.DataErrorListColumnId==-1" :haserror="card.E06100.DataErrorListColumnId" :id="cIndex + '_E06100_' + 5" :name="cIndex + '_E06100'" type="radio" v-model="card.E06100.FormValue" v-on:click="unLockFollowColumn($event)" value="5" /> <label :for="cIndex + '_E06100_' + 5">5.未就學&nbsp; &nbsp;&nbsp;</label><select :data-follow="cIndex + '_E06100'" :data-value="card.E06103.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E06103.DataErrorListColumnId==-1" :haserror="card.E06103.DataErrorListColumnId" :name="cIndex + '_E06103'" v-model="card.E06103.FormValue"><option value="0">---</option><option value="1">1.不識字</option><option value="2">2.自修</option> </select></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(255, 220, 220); width: 129px;">
+			<p>(2)在學或肄業者</p>
+
+			<p>之前最高學歷</p>
+			</td>
+			<td class="lockGroup" style="width: 458px;" v-for="(card, cIndex) in cardData">
+			<p><span style="color:green">上項勾選大學及以上之在學或肄業者請續填之前最高學歷</span></p>
+
+			<p><span style="color:green"></span> <input :data-value="card.E06200.PreviousData" :disabled="!unlockAllColumn &amp;&amp; !card.E06200.IsManual &amp;&amp; card.E06200.DataErrorListColumnId==-1" :haserror="card.E06200.DataErrorListColumnId" :id="cIndex + '_E06200_' + 1" :name="cIndex + '_E06200'" type="radio" v-model="card.E06200.FormValue" v-on:click="unLockFollowColumn($event)" value="1" /> <label :for="cIndex + '_E06200_' + 1">1.高級中等</label> <input :data-value="card.E06200.PreviousData" :disabled="!unlockAllColumn &amp;&amp; !card.E06200.IsManual &amp;&amp; card.E06200.DataErrorListColumnId==-1" :haserror="card.E06200.DataErrorListColumnId" :id="cIndex + '_E06200_' + 2" :name="cIndex + '_E06200'" type="radio" v-model="card.E06200.FormValue" v-on:click="unLockFollowColumn($event)" value="2" /> <label :for="cIndex + '_E06200_' + 2">2.專科</label> <input :data-value="card.E06200.PreviousData" :disabled="!unlockAllColumn &amp;&amp; !card.E06200.IsManual &amp;&amp; card.E06200.DataErrorListColumnId==-1" :haserror="card.E06200.DataErrorListColumnId" :id="cIndex + '_E06200_' + 3" :name="cIndex + '_E06200'" type="radio" v-model="card.E06200.FormValue" v-on:click="unLockFollowColumn($event)" value="3" /> <label :for="cIndex + '_E06200_' + 3">3.大學</label> <input :data-value="card.E06200.PreviousData" :disabled="!unlockAllColumn &amp;&amp; !card.E06200.IsManual &amp;&amp; card.E06200.DataErrorListColumnId==-1" :haserror="card.E06200.DataErrorListColumnId" :id="cIndex + '_E06200_' + 4" :name="cIndex + '_E06200'" type="radio" v-model="card.E06200.FormValue" v-on:click="unLockFollowColumn($event)" value="4" /> <label :for="cIndex + '_E06200_' + 4">4.碩士</label> <input :data-value="card.E06200.PreviousData" :disabled="!unlockAllColumn &amp;&amp; !card.E06200.IsManual &amp;&amp; card.E06200.DataErrorListColumnId==-1" :haserror="card.E06200.DataErrorListColumnId" :id="cIndex + '_E06200_' + 5" :name="cIndex + '_E06200'" type="radio" v-model="card.E06200.FormValue" v-on:click="unLockFollowColumn($event)" value="5" /> <label :for="cIndex + '_E06200_' + 5">5.博士</label></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(255, 220, 220); width: 129px;">
+			<p>(3)在學地</p>
+
+			<p><span style="color:green">在學者請續</span></p>
+
+			<p><span style="color:green">填在學地</span></p>
+			</td>
+			<td class="lockGroup" style="width: 458px;" v-for="(card, cIndex) in cardData"><input :data-value="card.E06300.PreviousData" :disabled="!unlockAllColumn &amp;&amp; !card.E06300.IsManual &amp;&amp; card.E06300.DataErrorListColumnId==-1" :haserror="card.E06300.DataErrorListColumnId" :id="cIndex + '_E06300_' + 1" :name="cIndex + '_E06300'" type="radio" v-model="card.E06300.FormValue" v-on:click="unLockFollowColumn($event)" value="1" /> <label :for="cIndex + '_E06300_' + 1">①在現住鄉(鎮市區)</label><br />
+			<input :data-value="card.E06300.PreviousData" :disabled="!unlockAllColumn &amp;&amp; !card.E06300.IsManual &amp;&amp; card.E06300.DataErrorListColumnId==-1" :haserror="card.E06300.DataErrorListColumnId" :id="cIndex + '_E06300_' + 2" :name="cIndex + '_E06300'" type="radio" v-model="card.E06300.FormValue" v-on:click="unLockFollowColumn($event)" value="2" /> <label :for="cIndex + '_E06300_' + 2">②不在現住鄉(鎮市區)</label><span style="margin-left:20px;" v-show="card.E06300.FormValue == 2"> <label>&nbsp; &nbsp; &nbsp; 縣市:</label><input :data-follow="cIndex + '_E06300'" :data-value="card.E06301.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E06301.DataErrorListColumnId==-1" :haserror="card.E06301.DataErrorListColumnId" :name="cIndex + '_E06301'" maxlength="6" size="10" type="text" v-model="card.E06301.FormValue" /><br />
+			<label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;鄉鎮市區:</label><input :data-follow="cIndex + '_E06300'" :data-value="card.E06302.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E06302.DataErrorListColumnId==-1" :haserror="card.E06302.DataErrorListColumnId" :name="cIndex + '_E06302'" maxlength="8" size="12" type="text" v-model="card.E06302.FormValue" /><br />
+			<label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;縣市鄉鎮代號</label><input :data-follow="cIndex + '_E06300'" :data-value="card.TOWN06.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.TOWN06.DataErrorListColumnId==-1" :haserror="card.TOWN06.DataErrorListColumnId" :name="cIndex + '_TOWN06'" class="zipcode" maxlength="4" size="4" type="text" v-model="card.TOWN06.FormValue" /></span><br />
+			<input :data-value="card.E06300.PreviousData" :disabled="!unlockAllColumn &amp;&amp; !card.E06300.IsManual &amp;&amp; card.E06300.DataErrorListColumnId==-1" :haserror="card.E06300.DataErrorListColumnId" :id="cIndex + '_E06300_' + 3" :name="cIndex + '_E06300'" type="radio" v-model="card.E06300.FormValue" v-on:click="unLockFollowColumn($event)" value="3" /> <label :for="cIndex + '_E06300_' + 3">③不在臺澎金馬地區</label></td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(255, 220, 220); width: 129px;">
+			<p>[7]是否經常居住</p>
+
+			<p>在本戶</p>
+			</td>
+			<td class="lockGroup" style="width: 458px;" v-for="(card, cIndex) in cardData"><select :data-value="card.E07000.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E07000.DataErrorListColumnId==-1" :haserror="card.E07000.DataErrorListColumnId" :name="cIndex + '_E07000'" v-model="card.E07000.FormValue" v-on:change="unLockFollowColumn($event)"><option value="0">---</option><option value="1">1.是，經常居住在本戶</option><option value="2">2.否，戶籍在本戶但沒有經常居住在本戶</option> </select>
+			<div style="margin-left:20px;" v-show="card.E07000.FormValue == 2">2-1常住在:<select :data-follow="cIndex + '_E07000'" :data-value="card.E07210.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E07210.DataErrorListColumnId==-1" :haserror="card.E07210.DataErrorListColumnId" :name="cIndex + '_E07210'" v-model="card.E07210.FormValue"><option value="0">---</option><option value="1">1.本鄉(鎮市區)</option><option value="2">2.其他鄉(鎮市區)</option><option value="3">3.非台澎金馬地區</option><option value="4">4.失蹤人口</option> </select>
+			<div style="margin-left:20px" v-show="card.E07000.FormValue &gt; 1 &amp;&amp; card.E07210.FormValue == 2"><label>縣市:</label><input :data-follow="cIndex + '_E07000'" :data-value="card.E07211.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E07211.DataErrorListColumnId==-1" :haserror="card.E07211.DataErrorListColumnId" :name="cIndex + '_E07211'" maxlength="6" size="10" type="text" v-model="card.E07211.FormValue" /><span>&nbsp;</span> <label>鄉鎮市區:</label><input :data-follow="cIndex + '_E07000'" :data-value="card.E07212.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E07212.DataErrorListColumnId==-1" :haserror="card.E07212.DataErrorListColumnId" :name="cIndex + '_E07212'" maxlength="8" size="12" type="text" v-model="card.E07212.FormValue" /><br />
+			<label>縣市鄉鎮代號</label><input :data-follow="cIndex + '_E07000'" :data-value="card.TOWN07.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.TOWN07.DataErrorListColumnId==-1" :haserror="card.TOWN07.DataErrorListColumnId" :name="cIndex + '_TOWN07'" class="zipcode" maxlength="4" size="4" type="text" v-model="card.TOWN07.FormValue" /></div>
+
+			<div style="margin-left:20px" v-show="card.E07000.FormValue &gt; 1 &amp;&amp; card.E07210.FormValue == 3"><label>國別:</label><select :data-follow="cIndex + '_E07000'" :data-value="card.E07213.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E07213.DataErrorListColumnId==-1" :haserror="card.E07213.DataErrorListColumnId" :name="cIndex + '_E07213'" v-model="card.E07213.FormValue"><option value="0">---</option><option value="1">1.大陸地區(含港澳)</option><option value="2">2.日本、韓國</option><option value="3">3.東南亞</option><option value="4">4.美國、加拿大</option><option value="5">5.其他國家</option> </select></div>
+
+			<div v-show="card.E07000.FormValue &gt; 1 &amp;&amp; (card.E07210.FormValue == 1 || card.E07210.FormValue == 2 ||  card.E07210.FormValue == 3)"><label>2-2是因為:</label><select :data-follow="cIndex + '_E07210'" :data-value="card.E07220.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E07220.DataErrorListColumnId==-1" :haserror="card.E07220.DataErrorListColumnId" :name="cIndex + '_E07220'" v-model="card.E07220.FormValue"><option value="0">---</option><option value="1">1.求學</option><option value="2">2.工作</option><option value="3">3.住醫(安養)院</option><option value="4">4.服兵役(含替代役)</option><option value="5">5.與其他家人同住</option><option value="6">6.寄籍</option><option value="7">7.其他</option> </select>
+
+			<div style="margin-left:20px;" v-show="card.E07000.FormValue &gt; 1 &amp;&amp; (card.E07210.FormValue == 1 || card.E07210.FormValue == 2 ||  card.E07210.FormValue == 3) &amp;&amp;  card.E07220.FormValue == 7">其他原因備註:<br />
+			<input :data-follow="cIndex + '_E07220'" :data-range="[6]" :data-value="card.E0722M.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E0722M.DataErrorListColumnId==-1" :haserror="card.E0722M.DataErrorListColumnId" :name="cIndex + '_E0722M'" maxlength="30" size="50" type="text" v-model="card.E0722M.FormValue" /></div>
+			</div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(255, 220, 220); width: 129px;">
+			<p>[8]您是否為本戶</p>
+
+			<p>主要家計負責人</p>
+			</td>
+			<td class="lockGroup" style="width: 458px;" v-for="(card, cIndex) in cardData"><input :data-value="card.E08000.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E08000.DataErrorListColumnId==-1" :haserror="card.E08000.DataErrorListColumnId" :id="cIndex + '_E08000_' + 1" :name="cIndex + '_E08000'" type="radio" v-model="card.E08000.FormValue" value="1" /> <label :for="cIndex + '_E08000_' + 1">1.是</label><br />
+			<input :data-value="card.E08000.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E08000.DataErrorListColumnId==-1" :haserror="card.E08000.DataErrorListColumnId" :id="cIndex + '_E08000_' + 2" :name="cIndex + '_E08000'" type="radio" v-model="card.E08000.FormValue" value="2" /> <label :for="cIndex + '_E08000_' + 2">2.否</label></td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(255, 220, 220); width: 129px;">
+			<p>[9]您是否需他人幫忙</p>
+
+			<p>長達或預期達</p>
+
+			<p>6個月以上</p>
+
+			<p><span style="color:green">本問項1~9</span><span style="color:green">可複</span></p>
+
+			<p><span style="color:green">選</span></p>
+			</td>
+			<td class="lockGroup" style="width: 458px;" v-for="(card, cIndex) in cardData">
+			<table class="border-hide" style="border: none; width: 353.8px;">
+				<tbody>
+					<tr>
+						<td><input :data-value="card.E09001.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E09001.DataErrorListColumnId==-1" :false-value="0" :haserror="card.E09001.DataErrorListColumnId" :id="cIndex + '_E09001'" :name="cIndex + '_E09001'" :true-value="1" type="checkbox" v-model="card.E09001.FormValue" /> <label :for="cIndex + '_E09001'">1.吃飯</label></td>
+						<td style="width: 210px;"><input :data-value="card.E09006.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E09006.DataErrorListColumnId==-1" :false-value="0" :haserror="card.E09006.DataErrorListColumnId" :id="cIndex + '_E09006'" :name="cIndex + '_E09006'" :true-value="1" type="checkbox" v-model="card.E09006.FormValue" /> <label :for="cIndex + '_E09006'">6.在室內外走動</label></td>
+					</tr>
+					<tr>
+						<td><input :data-value="card.E09002.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E09002.DataErrorListColumnId==-1" :false-value="0" :haserror="card.E09002.DataErrorListColumnId" :id="cIndex + '_E09002'" :name="cIndex + '_E09002'" :true-value="1" type="checkbox" v-model="card.E09002.FormValue" /> <label :for="cIndex + '_E09002'">2.上下床</label></td>
+						<td style="width: 210px;"><input :data-value="card.E09007.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E09007.DataErrorListColumnId==-1" :false-value="0" :haserror="card.E09007.DataErrorListColumnId" :id="cIndex + '_E09007'" :name="cIndex + '_E09007'" :true-value="1" type="checkbox" v-model="card.E09007.FormValue" /> <label :for="cIndex + '_E09007'">7.備餐(煮飯)</label></td>
+					</tr>
+					<tr>
+						<td><input :data-value="card.E09003.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E09003.DataErrorListColumnId==-1" :false-value="0" :haserror="card.E09003.DataErrorListColumnId" :id="cIndex + '_E09003'" :name="cIndex + '_E09003'" :true-value="1" type="checkbox" v-model="card.E09003.FormValue" /> <label :for="cIndex + '_E09003'">3.更換衣服</label></td>
+						<td style="width: 210px;"><input :data-value="card.E09008.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E09008.DataErrorListColumnId==-1" :false-value="0" :haserror="card.E09008.DataErrorListColumnId" :id="cIndex + '_E09008'" :name="cIndex + '_E09008'" :true-value="1" type="checkbox" v-model="card.E09008.FormValue" /> <label :for="cIndex + '_E09008'">8.洗(含晾曬)衣服</label></td>
+					</tr>
+					<tr>
+						<td><input :data-value="card.E09004.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E09004.DataErrorListColumnId==-1" :false-value="0" :haserror="card.E09004.DataErrorListColumnId" :id="cIndex + '_E09004'" :name="cIndex + '_E09004'" :true-value="1" type="checkbox" v-model="card.E09004.FormValue" /> <label :for="cIndex + '_E09004'">4.上廁所</label></td>
+						<td style="width: 210px;"><input :data-value="card.E09009.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E09009.DataErrorListColumnId==-1" :false-value="0" :haserror="card.E09009.DataErrorListColumnId" :id="cIndex + '_E09009'" :name="cIndex + '_E09009'" :true-value="1" type="checkbox" v-model="card.E09009.FormValue" /> <label :for="cIndex + '_E09009'">9.處理家務(打掃、擦桌等清潔工作)</label></td>
+					</tr>
+					<tr>
+						<td><input :data-value="card.E09005.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E09005.DataErrorListColumnId==-1" :false-value="0" :haserror="card.E09005.DataErrorListColumnId" :id="cIndex + '_E09005'" :name="cIndex + '_E09005'" :true-value="1" type="checkbox" v-model="card.E09005.FormValue" /> <label :for="cIndex + '_E09005'">5.洗澡</label></td>
+						<td style="width: 210px;"><input :data-value="card.E09010.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E09010.DataErrorListColumnId==-1" :false-value="0" :haserror="card.E09010.DataErrorListColumnId" :id="cIndex + '_E09010'" :name="cIndex + '_E09010'" :true-value="1" type="checkbox" v-model="card.E09010.FormValue" /> <label :for="cIndex + '_E09010'">10.不具上列各項障礙</label></td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td :colspan="cardData.length + 1" class="break" style="color: green; width: 129px;">
+			<p>*未滿5歲(104年11月8日以後出生)以下問項免填</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(255, 220, 220); width: 129px;">
+			<p>[10]使用語言情形</p>
+			</td>
+			<td class="lockGroup" style="width: 458px;" v-for="(card, cIndex) in cardData">
+			<p style="text-align: right;width:210px">1.兒時最早學會:<select :data-value="card.E10101.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E10101.DataErrorListColumnId==-1" :haserror="card.E10101.DataErrorListColumnId" :name="cIndex + '_E10101'" v-model="card.E10101.FormValue"><option value="0">---</option><option value="1">1.國語</option><option value="2">2.閩南語</option><option value="3">3.客家語</option><option value="4">4.原住民族語</option><option value="5">5.臺灣手語</option><option value="6">6.其他語言</option><option value="7">7.不知或無</option> </select></p>
+
+			<p style="text-align: right;width:210px">2.現在主要使用:<select :data-value="card.E10201.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E10201.DataErrorListColumnId==-1" :haserror="card.E10201.DataErrorListColumnId" :name="cIndex + '_E10201'" v-model="card.E10201.FormValue"><option value="0">---</option><option value="1">1.國語</option><option value="2">2.閩南語</option><option value="3">3.客家語</option><option value="4">4.原住民族語</option><option value="5">5.臺灣手語</option><option value="6">6.其他語言</option><option value="7">7.不知或無</option> </select><br />
+			&nbsp;&nbsp;現在次要使用:<select :data-value="card.E10202.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E10202.DataErrorListColumnId==-1" :haserror="card.E10202.DataErrorListColumnId" :name="cIndex + '_E10202'" v-model="card.E10202.FormValue"><option value="0">---</option><option value="1">1.國語</option><option value="2">2.閩南語</option><option value="3">3.客家語</option><option value="4">4.原住民族語</option><option value="5">5.臺灣手語</option><option value="6">6.其他語言</option><option value="7">7.不知或無</option> </select></p>
+
+			<p style="text-align: right;width:210px">3.父親最常使用:<select :data-value="card.E10301.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E10301.DataErrorListColumnId==-1" :haserror="card.E10301.DataErrorListColumnId" :name="cIndex + '_E10301'" v-model="card.E10301.FormValue"><option value="0">---</option><option value="1">1.國語</option><option value="2">2.閩南語</option><option value="3">3.客家語</option><option value="4">4.原住民族語</option><option value="5">5.臺灣手語</option><option value="6">6.其他語言</option><option value="7">7.不知或無</option> </select><br />
+			&nbsp;&nbsp;母親最常使用:<select :data-value="card.E10302.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E10302.DataErrorListColumnId==-1" :haserror="card.E10302.DataErrorListColumnId" :name="cIndex + '_E10302'" v-model="card.E10302.FormValue"><option value="0">---</option><option value="1">1.國語</option><option value="2">2.閩南語</option><option value="3">3.客家語</option><option value="4">4.原住民族語</option><option value="5">5.臺灣手語</option><option value="6">6.其他語言</option><option value="7">7.不知或無</option> </select></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(255, 220, 220); width: 129px;">
+			<p>[11]您5年前<span style="color:red">(104</span></p>
+
+			<p><span style="color:red">年11月</span><span style="color:red">8日)</span>的居</p>
+
+			<p>住地點</p>
+			</td>
+			<td class="lockGroup" style="width: 458px;" v-for="(card, cIndex) in cardData"><select :data-value="card.E11000.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E11000.DataErrorListColumnId==-1" :haserror="card.E11000.DataErrorListColumnId" :name="cIndex + '_E11000'" v-model="card.E11000.FormValue"><option value="0">---</option><option value="1">1.同現住處所</option><option value="2">2.同現住鄉(鎮市區)不同處所</option><option value="3">3.其他鄉(鎮市區)</option><option value="4">4.大陸地區(含港澳)</option><option value="5">5.其他</option> </select>
+			<div style="margin-left:20px" v-show="card.E11000.FormValue == 3"><label>縣市:</label><input :data-follow="cIndex + '_E11000'" :data-value="card.E11001.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E11001.DataErrorListColumnId==-1" :haserror="card.E11001.DataErrorListColumnId" :name="cIndex + '_E11001'" maxlength="6" size="10" type="text" v-model="card.E11001.FormValue" /><span>&nbsp;</span> <label>鄉鎮市區:</label><input :data-follow="cIndex + '_E11000'" :data-value="card.E11002.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E11002.DataErrorListColumnId==-1" :haserror="card.E11002.DataErrorListColumnId" :name="cIndex + '_E11002'" maxlength="8" size="12" type="text" v-model="card.E11002.FormValue" /><br />
+			<label>縣市鄉鎮代號:</label><input :data-follow="cIndex + '_E11000'" :data-value="card.TOWN11.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.TOWN11.DataErrorListColumnId==-1" :haserror="card.TOWN11.DataErrorListColumnId" :name="cIndex + '_TOWN11'" class="zipcode" maxlength="4" size="4" type="text" v-model="card.TOWN11.FormValue" /></div>
+
+			<div style="margin-left:20px" v-show="card.E11000.FormValue == 5"><label>其他地點:</label><input :data-follow="cIndex + '_E11000'" :data-value="card.E1100M.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E1100M.DataErrorListColumnId==-1" :haserror="card.E1100M.DataErrorListColumnId" :name="cIndex + '_E1100M'" maxlength="20" size="40" type="text" v-model="card.E1100M.FormValue" /></div>
+			</td>
+		</tr>
+		<tr>
+			<td :colspan="cardData.length + 1" class="break" style="color: green; width: 129px;">
+			<p>*未滿15歲(94年11月8日以後出生)以下問項免填</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(255, 220, 220); width: 129px;">
+			<p>[12]您的現有子女</p>
+
+			<p>及其居住地點<span style="color:green"> </span></p>
+			</td>
+			<td class="lockGroup" style="width: 458px;" v-for="(card, cIndex) in cardData"><span>您現有子女</span><input :data-value="card.E12000.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E12000.DataErrorListColumnId==-1" :haserror="card.E12000.DataErrorListColumnId" :name="cIndex + '_E12000'" maxlength="2" size="2" type="text" v-model="card.E12000.FormValue" /><span>人,有子女者,請續勾選與您居住距離&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br />
+			<label style="margin-left:20px">最近的子女是經常居住在:</label><select :data-value="card.E12001.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E12001.DataErrorListColumnId==-1" :haserror="card.E12001.DataErrorListColumnId" :name="cIndex + '_E12001'" v-model="card.E12001.FormValue"><option value="0">---</option><option value="1">1.同一居住處所</option><option value="2">2.同一鄉(鎮市區)不同處所</option><option value="3">3.同一縣(市)不同鄉(鎮市區)</option><option value="4">4.其他縣(市)</option><option value="5">5.大陸地區(含港澳)</option><option value="6">6.其他</option> </select></td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(255, 220, 220); width: 129px;">
+			<p>&nbsp;</p>
+
+			<p>[13]您在109年11</p>
+
+			<p>月1日到7日有</p>
+
+			<p>沒有工作</p>
+
+			<p>&nbsp;</p>
+			</td>
+			<td class="lockGroup" style="width: 458px;" v-for="(card, cIndex) in cardData"><select :data-value="card.E13000.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E13000.DataErrorListColumnId==-1" :haserror="card.E13000.DataErrorListColumnId" :name="cIndex + '_E13000'" v-model="card.E13000.FormValue"><option value="0">---</option><option value="1">1.有工作</option><option value="2">2.職業軍人</option><option value="3">3.無工作</option> </select>
+			<div style="margin-left:20px" v-show="card.E13000.FormValue == 3"><input :data-follow="cIndex + '_E13000'" :data-value="card.E13001.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E13001.DataErrorListColumnId==-1" :haserror="card.E13001.DataErrorListColumnId" :id="cIndex + '_E13001_' + 1" :name="cIndex + '_E13001'" type="radio" v-model="card.E13001.FormValue" value="1" /> <label :for="cIndex + '_E13001_' + 1">1.正在找工作或已找到在等待結果</label><br />
+			<input :data-follow="cIndex + '_E13000'" :data-value="card.E13001.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E13001.DataErrorListColumnId==-1" :haserror="card.E13001.DataErrorListColumnId" :id="cIndex + '_E13001_' + 2" :name="cIndex + '_E13001'" type="radio" v-model="card.E13001.FormValue" value="2" /> <label :for="cIndex + '_E13001_' + 2">2.服兵役(含替代役)</label><input :data-follow="cIndex + '_E13000'" :data-value="card.E13001.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E13001.DataErrorListColumnId==-1" :haserror="card.E13001.DataErrorListColumnId" :id="cIndex + '_E13001_' + 3" :name="cIndex + '_E13001'" type="radio" v-model="card.E13001.FormValue" value="3" /> <label :for="cIndex + '_E13001_' + 3">3.其他</label></div>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(255, 220, 220); width: 129px;">
+			<p>&nbsp;</p>
+
+			<p>&nbsp;</p>
+
+			<p>(1)您的工作地點</p>
+
+			<p>&nbsp; &nbsp; &nbsp;</p>
+			</td>
+			<td class="lockGroup" style="width: 458px;" v-for="(card, cIndex) in cardData"><select :data-value="card.E13100.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E13100.DataErrorListColumnId==-1" :haserror="card.E13100.DataErrorListColumnId" :name="cIndex + '_E13100'" v-model="card.E13100.FormValue"><option value="0">---</option><option value="1">1.在現住鄉(鎮市區)</option><option value="2">2.不在現住鄉(鎮市區)</option><option value="3">3.不在台澎金馬地區</option> </select>
+			<div style="margin-left:20px" v-show="card.E13100.FormValue == 2"><label>縣市名稱:</label><input :data-follow="cIndex + '_E13100'" :data-value="card.E13101.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E13101.DataErrorListColumnId==-1" :haserror="card.E13101.DataErrorListColumnId" :name="cIndex + '_E13101'" maxlength="6" size="10" type="text" v-model="card.E13101.FormValue" /><span>&nbsp;</span> <label>鄉鎮市區名稱:</label><input :data-follow="cIndex + '_E13100'" :data-value="card.E13102.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E13102.DataErrorListColumnId==-1" :haserror="card.E13102.DataErrorListColumnId" :name="cIndex + '_E13102'" maxlength="8" size="12" type="text" v-model="card.E13102.FormValue" /><br />
+			<label>縣市鄉鎮代號:</label><input :data-follow="cIndex + '_E13100'" :data-value="card.TOWN13.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.TOWN13.DataErrorListColumnId==-1" :haserror="card.TOWN13.DataErrorListColumnId" :name="cIndex + '_TOWN13'" class="zipcode" maxlength="4" size="4" type="text" v-model="card.TOWN13.FormValue" /></div>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(255, 220, 220); width: 129px;">
+			<p>(2)工作場所的主</p>
+
+			<p>要產品或業務及</p>
+
+			<p>名稱</p>
+			</td>
+			<td class="lockGroup" style="width: 458px;" v-for="(card, cIndex) in cardData"><input :data-value="card.E13201.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E13201.DataErrorListColumnId==-1" :haserror="card.E13201.DataErrorListColumnId" :name="cIndex + '_E13201'" maxlength="80" size="80" style="width: 300px;" type="text" v-model="card.E13201.FormValue" /> <span>&nbsp;</span> <label>代號:</label><input :data-value="card.E13202.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E13202.DataErrorListColumnId==-1" :haserror="card.E13202.DataErrorListColumnId" :name="cIndex + '_E13202'" maxlength="2" size="2" type="text" v-model="card.E13202.FormValue" /></td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(255, 220, 220); width: 129px;">
+			<p>(3)您主要辦理的</p>
+
+			<p>工作內容及所擔</p>
+
+			<p>任的職務名稱</p>
+			</td>
+			<td class="lockGroup" style="width: 458px;" v-for="(card, cIndex) in cardData"><input :data-value="card.E13301.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E13301.DataErrorListColumnId==-1" :haserror="card.E13301.DataErrorListColumnId" :name="cIndex + '_E13301'" maxlength="80" size="80" style="width: 300px;" type="text" v-model="card.E13301.FormValue" /> <span>&nbsp;</span> <label>代號:</label><input :data-value="card.E13302.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.E13302.DataErrorListColumnId==-1" :haserror="card.E13302.DataErrorListColumnId" :name="cIndex + '_E13302'" maxlength="2" size="2" type="text" v-model="card.E13302.FormValue" /></td>
+		</tr>
+		<tr>
+			<td style="background-color: rgb(255, 220, 220); width: 129px;">
+			<p>&nbsp;</p>
+
+			<p>人口檔流水號</p>
+
+			<p>&nbsp;</p>
+			</td>
+			<td class="lockGroup" style="width: 458px;" v-for="(card, cIndex) in cardData"><input :data-value="card.PSERN.PreviousData" :disabled="!unlockAllColumn &amp;&amp; card.PSERN.DataErrorListColumnId==-1" :haserror="card.PSERN.DataErrorListColumnId" :name="cIndex + '_PSERN'" class="textCenter" maxlength="10" size="10" type="text" v-model="card.PSERN.FormValue" /></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<div id="gtx-trans" style="position: absolute; left: 236px; top: 2456px;">
+<div class="gtx-trans-icon"><br />
+&nbsp;</div>
+</div>
